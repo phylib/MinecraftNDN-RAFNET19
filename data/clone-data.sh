@@ -12,9 +12,9 @@ download () {
 
 
 FILE="networkTrace.pcap"
-URL="https://raw.githubusercontent.com/phylib/MinecraftNDN-RAFNET19/master/LICENSE"
+URL="http://www-itec.aau.at/ftp/icn/minecraft-ndn/RAFNET-19/networkTrace.pcap"
 download $FILE $URL
 
 FILE="gamestatechanges.tar.gz"
-URL="domain.com/file.txt"
+URL="http://www-itec.aau.at/ftp/icn/minecraft-ndn/RAFNET-19/gamestatechanges.tar.gz"
 download $FILE $URL
