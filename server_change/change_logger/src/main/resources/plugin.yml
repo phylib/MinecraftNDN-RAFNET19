@@ -1,0 +1,4 @@
+name: ServerStateLoggingPlugin
+main: at.aau.itec.minecraft.serverstateloggingplugin.Main
+version: 1.0
+api-version: 1.12.2

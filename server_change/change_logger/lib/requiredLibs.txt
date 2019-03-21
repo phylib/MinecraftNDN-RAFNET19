@@ -1,0 +1,6 @@
+Please place the file "craftbukkit-1.12.2-R0.1-SNAPSHOT.jar" in here.
+It is created as a byproduct of the compilation process of the spigot 1.12.2 server (using the build tools).
+
+1) Obtain the build_tools (https://www.spigotmc.org/wiki/buildtools/)
+2) Build the spigot-server ("java -jar BuildTools.jar --rev 1.11.2")
+3) "craftbukkit-1.12.2-R0.1-SNAPSHOT.jar" can be found in <BuildTools.jar-directory>/CraftBukkit/target

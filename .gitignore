@@ -1,0 +1,3 @@
+# Ignore python specific files
+*.pyc
+__pycache__/
