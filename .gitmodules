@@ -1,0 +1,3 @@
+[submodule "network-trace-analysis/MCPcapParser"]
+	path = network-trace-analysis/MCPcapParser
+	url = https://github.com/phylib/MCPcapParser.git
