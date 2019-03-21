@@ -1,11 +1,5 @@
-# setup (virtual environment):
+# Tracing the game State
 
-    cd <folder containing "change_statistics">
-    python3 -m venv stat-venv
-    source stat-venv/bin/activate
-    pip install pandas matplotlib numpy mpldatacursor
+In order to trace the game state of a running Minecraft (Spigot) server, the `change_logger` plugin has to be enabled on the server. Instructions to install the plugin can be found in the `change_logger` folder.
 
-# usage examples:
-
-    export PYTHONPATH=$PYTHONPATH:<folder containing "change_statistics">
-    python3 change_statistics/intervalStatistics.py /home/example/changeLog_Tue_Nov_13_12:55:20_CET_2018.txt
+Once the plugin was used to create a trace, the trace can be automized by the scripts in the `change_statistics` folder. More information on running the scripts can be found in the corresponding folder.
