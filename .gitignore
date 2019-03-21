@@ -1,3 +1,7 @@
 # Ignore python specific files
 *.pyc
 __pycache__/
+
+# Ignore files in Data folder
+data/networkTrace.pcap
+data/gamestatechanges.tar.gz
