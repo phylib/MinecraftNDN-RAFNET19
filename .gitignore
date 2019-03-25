@@ -4,4 +4,9 @@ __pycache__/
 
 # Ignore files in Data folder
 data/networkTrace.pcap
-data/gamestatechanges.tar.gz
+data/gameStateChanges.txt
+
+# Ignore generated files
+gamestate-changes/change_statistics/intervalStats_1.0s.txt
+gamestate-changes/change_statistics/plotChangeTypeStatistics_1.0s.csv
+gamestate-changes/change_statistics/stat-venv
