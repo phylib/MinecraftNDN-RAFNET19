@@ -57,10 +57,8 @@ def execute(input, players):
         return "/" + str(csv_entry["Chunk"]) + "/" + str(csv_entry["Tick"]) + "/" + str(entity_id) + "/" + csv_entry["MessageType"] + "/"
     df["ndn-name"] = df.apply(get_ndn_name, axis=1)
 
-    print(df)
-
-    print(len(df[df["ndn-name"].str.contains("/", na=False)]["ndn-name"]))
-    print(len(df[df["ndn-name"].str.contains("/", na=False)]["ndn-name"].unique()))
+    print("Number of packets: " + str(len(df[df["ndn-name"].str.contains("/", na=False)]["ndn-name"])))
+    print("Number of unique packets: "  + str(len(df[df["ndn-name"].str.contains("/", na=False)]["ndn-name"].unique())))
 
 
     df_names = df[df["ndn-name"].str.contains("/", na=False)]

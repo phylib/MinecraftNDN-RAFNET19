@@ -4,7 +4,7 @@ The provided Minecraft network trace contains the raw traffic recorded on the se
 
 To build the Java project, simple execute the following commands:
 
-    git submodule init
+    git submodule update --init --remote
     cd McPcapParser
     mvn clean install
     cd ..
@@ -25,8 +25,9 @@ In the following, Python scripts are used to extract relevant information from t
     # Install dependences
     pip install -r pythonscripts/requirements.txt
     # Execute script extracting chunk indizes
-    ls parsedPackets/ | grep parsedPackets.log | xargs -I {} python3 pythonscripts MCChunkInterpolation.py -i "./parsedPackets/{}"
+    ls parsedPackets/ | grep parsedPackets.log | xargs -I {} python3 pythonscripts/MCChunkInterpolation.py -i "./parsedPackets/{}"
     # Calculate figures from paper
-    # Attention: May take a while
+    # This may take a while...
     python pythonscripts/CalculateMCPacketStatistics.py -i parsedPackets/143205122180-59194_parsedPackets_interpolated.csv -b False
-    
+    # To count the number of duplicated packets, execute the following command
+    python pythonscripts/CombineTraces.py -i parsedPackets/
