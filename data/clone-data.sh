@@ -11,9 +11,9 @@ download () {
 
 
 FILE="networkTrace.pcap"
-URL="http://www-itec.aau.at/ftp/icn/minecraft-ndn/RAFNET-19/networkTrace.tar.gz"
+URL="http://ftp.itec.aau.at/icn/minecraft-ndn/RAFNET-19/networkTrace.tar.gz"
 download $FILE $URL
 
 FILE="gameStateChanges.txt"
-URL="http://www-itec.aau.at/ftp/icn/minecraft-ndn/RAFNET-19/gameStateChanges.tar.gz"
+URL="http://ftp.itec.aau.at/icn/minecraft-ndn/RAFNET-19/gameStateChanges.tar.gz"
 download $FILE $URL
